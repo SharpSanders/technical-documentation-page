@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Frontend Dev Docs</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav id="navbar">
+    <header>Frontend Docs</header>
+    <a class="nav-link" href="#HTML_Basics">HTML Basics</a>
+    <a class="nav-link" href="#CSS_Fundamentals">CSS Fundamentals</a>
+    <a class="nav-link" href="#Responsive_Design">Responsive Design</a>
+    <a class="nav-link" href="#JavaScript_Essentials">JavaScript Essentials</a>
+    <a class="nav-link" href="#DOM_Manipulation">DOM Manipulation</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="HTML_Basics">
+      <header>HTML Basics</header>
+      <p>HTML is the skeleton of all web content. It structures your content semantically.</p>
+      <p>Every element serves a purpose, from headings and paragraphs to forms and navigation.</p>
+      <code>&lt;h1&gt;Hello World&lt;/h1&gt;</code>
+      <code>&lt;a href="#"&gt;Click Me&lt;/a&gt;</code>
+      <ul>
+        <li>Headings: h1–h6</li>
+        <li>Paragraphs: p</li>
+        <li>Links: a</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="CSS_Fundamentals">
+      <header>CSS Fundamentals</header>
+      <p>CSS styles your HTML, turning structure into design.</p>
+      <p>You can style elements using classes, IDs, or tags.</p>
+      <code>body { background-color: #f4f6fa; }</code>
+      <code>.title { color: #FF6B81; }</code>
+      <ul>
+        <li>Selectors</li>
+        <li>Colors & Fonts</li>
+        <li>Box Model</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Responsive_Design">
+      <header>Responsive Design</header>
+      <p>Responsive design ensures your site works on all screen sizes.</p>
+      <p>Use flexible layouts and media queries for best results.</p>
+      <code>@media (max-width: 600px) { nav { display: none; } }</code>
+      <code>img { max-width: 100%; height: auto; }</code>
+      <ul>
+        <li>Mobile-first approach</li>
+        <li>Fluid grids</li>
+        <li>Media queries</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="JavaScript_Essentials">
+      <header>JavaScript Essentials</header>
+      <p>JavaScript brings interactivity to your pages.</p>
+      <p>It allows you to build dynamic behavior and respond to user actions.</p>
+      <code>console.log("Hello, world!");</code>
+      <code>let count = 0;</code>
+      <ul>
+        <li>Variables</li>
+        <li>Functions</li>
+        <li>Events</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="DOM_Manipulation">
+      <header>DOM Manipulation</header>
+      <p>The DOM is how JavaScript accesses and updates HTML/CSS.</p>
+      <p>You can dynamically create, remove, or modify elements.</p>
+      <code>document.getElementById("title").innerText = "Updated!";</code>
+      <code>element.classList.add("active");</code>
+      <ul>
+        <li>Selecting elements</li>
+        <li>Changing content</li>
+        <li>Adding/removing classes</li>
+      </ul>
+    </section>
+  </main>
+
+</body>
+</html>
