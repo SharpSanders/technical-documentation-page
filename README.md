@@ -1,6 +1,18 @@
 # Frontend Development – Technical Documentation Page
 
-A clean, responsive technical documentation page that explains fundamental frontend concepts including:
+A clean, fully responsive technical documentation layout built with **HTML and CSS**.  
+This project demonstrates structured documentation design, fixed navigation patterns, semantic markup, and responsive layout techniques.
+
+## Live Demo
+https://sharpsanders.github.io/technical-documentation-page/
+
+<img src="./img/Screenshot-technical-documentation-page.png" alt="Technical Documentation Page Screenshot" />
+
+---
+
+## Project Overview
+
+This documentation page explains core frontend development concepts:
 
 - HTML Basics  
 - CSS Fundamentals  
@@ -8,147 +20,120 @@ A clean, responsive technical documentation page that explains fundamental front
 - JavaScript Essentials  
 - DOM Manipulation  
 
-This project follows the freeCodeCamp “Technical Documentation Page” user stories while using a modern, easy-to-read layout.
+The layout follows the freeCodeCamp “Technical Documentation Page” requirements while applying a modern, readable visual design.
 
 ---
 
-##  Overview
+## Layout Structure
 
-The page is structured with:
+### Navigation
+- Fixed left-side sidebar on desktop
+- Converts to full-width top navigation on mobile
+- Anchor links scroll to individual sections (`#HTML_Basics`, `#CSS_Fundamentals`, etc.)
 
-### 🔹 A fixed left-side navigation bar  
-- Stays fixed on desktop  
-- Converts to a top block on mobile  
-- Links to each documentation section (`#HTML_Basics`, `#CSS_Fundamentals`, etc.)
-
-### 🔹 A main content area  
+### Main Content
 Each section includes:
-- A `<header>`
-- Descriptive text
-- Code examples (`<code>`)
-- Concept bullet lists
+- A semantic `<header>`
+- Descriptive text content
+- Formatted `<code>` examples
+- Supporting bullet lists
 
-### 🔹 Responsive behavior  
-- Sidebar becomes full-width at mobile sizes (`max-width: 768px`)
+---
+
+## Responsive Design
+
+- Sidebar becomes full-width under `768px`
 - Main content shifts to single-column layout
+- Navigation spacing adjusts for stacked mobile links
+- Layout maintains readability across desktop, tablet, and mobile
 
 ---
 
-##  Tech Stack
+## Styling Highlights
 
-- **HTML** – semantic sections, anchors, code blocks  
-- **CSS** – fixed sidebar, responsive layout, color palette  
-- **No JavaScript needed** — the content is static and fully CSS-powered
+### Navigation
+- `position: fixed` sidebar (desktop)
+- Full viewport height
+- Deep blue background (`#243B73`)
+- Subtle hover transition with padding shift
+- Accent hover color (`#FF6B81`)
+
+### Main Content
+- Off-white reading background (`#f4f6fa`)
+- Increased line-height for readability
+- Clear visual hierarchy for headings and sections
+
+### Code Blocks
+- Light blue background
+- Monospace font
+- Rounded corners for contrast and clarity
 
 ---
 
-##  Project Structure
+## Sections Included
 
-```text
+1. **HTML Basics**
+   - Headings, paragraphs, links
+   - Example tag structure
+
+2. **CSS Fundamentals**
+   - Selectors
+   - Colors
+   - Box model
+   - Sample CSS snippets
+
+3. **Responsive Design**
+   - Media queries
+   - Fluid images
+   - Mobile-first principles
+
+4. **JavaScript Essentials**
+   - Variables
+   - Functions
+   - Console logging
+   - Events
+
+5. **DOM Manipulation**
+   - Selecting elements
+   - Updating content
+   - Adding/removing classes
+
+---
+
+## Tech Stack
+
+- HTML5 (semantic structure)
+- CSS3 (layout, responsiveness, visual styling)
+- No JavaScript required
+
+---
+
+## Project Structure
+
+```txt
 technical-documentation-page/
-├── index.html      # Navigation + doc content
-└── styles.css      # Layout, colors, typography, responsiveness
- Styling Highlights
-Left navigation uses:
+  index.html
+  styles.css
+What This Demonstrates
+Building structured multi-section documentation layouts
 
-position: fixed
+Implementing fixed navigation with anchor linking
 
-Full-height sidebar (100%)
+Writing semantic, accessible HTML
 
-Deep blue background #243B73
+Creating responsive layouts using media queries
 
-Active and hover link behavior:
+Designing readable documentation-focused UI
 
-Links slide right slightly using extra left padding
+Potential Enhancements
+Smooth scrolling for navigation links
 
-Hover color: soft coral #FF6B81
+Active section highlighting on scroll
 
-Main content:
+Collapsible navigation for mobile
 
-Slight off-white background #f4f6fa
+Dark/light theme toggle
 
-Increased line-height for readability
-
-Code blocks use:
-
-Light blue background
-
-Monospace font
-
-Rounded corners
-
- Sections Included
-1. HTML Basics
-Headings
-
-Paragraphs
-
-Links
-
-Sample tags
-
-2. CSS Fundamentals
-Selectors
-
-Colors
-
-Box model
-
-Example CSS snippets
-
-3. Responsive Design
-Media queries
-
-Fluid images
-
-Mobile-first approach
-
-4. JavaScript Essentials
-Console logging
-
-Variables
-
-Functions
-
-Events
-
-5. DOM Manipulation
-Selecting elements
-
-Updating text
-
-Adding/removing classes
-
- Responsive Behavior
-When the screen width falls under 768px:
-
-Sidebar (#navbar) changes from fixed-left to top-floating
-
-Main content loses margin-left and becomes full-width
-
-Navigation links remove left padding on hover for cleaner stacking
-
-This ensures readability and accessibility on phones/tablets.
-
- What I Practiced
-Building a multi-section documentation layout
-
-Fixed navigation bar with anchor links
-
-Semantic HTML with accessible structure
-
-Responsive CSS with media queries
-
-Styling code blocks with readable formatting
-
- Future Improvements
-Add smooth scrolling for nav links
-
-Highlight active section while scrolling
-
-Add collapsible sections for mobile
-
-Add dark/light theme toggle
-
- Author
+Author
 Created by Trevyn Sanders.
+
